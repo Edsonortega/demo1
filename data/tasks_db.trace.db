@@ -1,0 +1,3 @@
+2025-03-25 08:44:43.743846-06:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FLYWAY_SCHEMA_HISTORY" not found (candidates are: "flyway_schema_history"); SQL statement:
+SELECT * FROM flyway_schema_history [42103-232]
