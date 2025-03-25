@@ -40,6 +40,7 @@ public class TaskController {
             Task taskToUpdate = response.get();
             taskToUpdate.setTitle(updatedTask.getTitle());
             taskToUpdate.setDescription(updatedTask.getDescription());
+            taskToUpdate.setPriority(updatedTask.getPriority());
             return ResponseEntity.ok(taskService.saveTask(taskToUpdate));
         }
         else{

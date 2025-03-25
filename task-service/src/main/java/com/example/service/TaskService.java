@@ -33,6 +33,7 @@ public class TaskService {
                     task.setTitle(t.getTitle());
                     task.setDescription(t.getDescription());
                     task.setCompleted(t.isCompleted());
+                    task.setPriority(t.getPriority());
                     return saveTask(task);
                 }).orElseThrow(() -> new RuntimeException("Task not found"));
     }
@@ -44,4 +45,5 @@ public class TaskService {
     public Optional<Task> getTaskByTitle(String title){
         return taskRepository.getTaskByTitle(title);
     }
+
 }

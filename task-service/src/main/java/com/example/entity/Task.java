@@ -23,4 +23,6 @@ public class Task {
     private String description;
 
     private boolean completed;
+
+    private String priority;
 }
